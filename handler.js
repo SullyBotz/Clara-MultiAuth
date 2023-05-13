@@ -1055,108 +1055,24 @@ Untuk Mematikan Fitur Ini, Ketik
 }
 
 global.dfail = (type, m, conn) => {
-const fgclink = {
-           "key": {
-               "fromMe": false,
-               "participant": "0@s.whatsapp.net",
-               "remoteJid": "0@s.whatsapp.net"
-           },
-           "message": {
-               "groupInviteMessage": {
-                   "groupJid": "6282127487538-1625305606@g.us",
-                   "inviteCode": "null",
-                   "groupName": "Halo", 
-                   "caption": wm, 
-                   'jpegThumbnail': fs.readFileSync('./media/ok.jpg')
-               }
-           }
-       }
-       let tag = `@${m.sender.replace(/@.+/, '')}`
+let tag = `@${m.sender.replace(/@.+/, '')}`
   let mentionedJid = [m.sender]
-    let rown = {
-        rowner: 'Ngapain Kak?, Fitur Ini Khusus Developerku'}[type]
-  if (rown) return conn.sendButton(m.chat, `${ucapan()} ` + tag, rown + '\n\n\n\n', [['Owner', '.owner']], m, { contextInfo: { externalAdReply: { showAdAttribution: true,
-    description: sgc,
-    title: "Euphyllia - MD",
-    body: wm,
-    thumbnail: fs.readFileSync('./thumbnail.jpg'),
-    sourceUrl: sgc
-     }}
-  })
-
-        
-let own = {
-owner: 'Ngapain Kak?, Fitur Ini Khusus Ownerku'}[type]
-  if (own) return conn.sendButton(m.chat, `${ucapan()} ` + tag, own + '\n\n\n\n', [['Owner', '.owner']], m, { contextInfo: { externalAdReply: { showAdAttribution: true,
-    description: sgc,
-    title: "Euphyllia - MD",
-    body: wm,
-    thumbnail: fs.readFileSync('./thumbnail.jpg'),
-    sourceUrl: sgc
-     }}
-  })
-
-let mod = {
-mods: 'Fitur Ini Khusus Moderator'}[type]
-  if (mod) return conn.sendButton(m.chat, `${ucapan()} ` + tag, mod + '\n\n\n\n', [['Maaf', 'huuu']], m, { contextInfo: { externalAdReply: { showAdAttribution: true,
-    description: sgc,
-    title: "Euphyllia - MD",
-    body: wm,
-    thumbnail: fs.readFileSync('./thumbnail.jpg'),
-    sourceUrl: sgc
-     }}
-  })
-let prm = {
-        premium: 'Fitur Ini Khusus Premium User'}[type]
-  if (prm) return conn.sendButton(m.chat, `${ucapan()} ` + tag, prm + '\n\n\n\n', [['Beli Prem', '.sewa']], m, { contextInfo: { externalAdReply: { showAdAttribution: true, 
-    description: sgc,
-    title: "Euphyllia - MD",
-    body: wm,
-    thumbnail: fs.readFileSync('./thumbnail.jpg'),
-    sourceUrl: sgc
-     }}
-  })
-
-let gc = {
-        group: 'Fitur Ini Hanya Bisa Digunakan Di Grup'
-        }[type]
-  if (gc) return conn.sendButton(m.chat, `${ucapan()} ` + tag, gc + '\n\n\n\n', [['Maaf', 'huuu']], m, { contextInfo: { externalAdReply: { showAdAttribution: true,
-    description: sgc,
-    title: "Euphyllia - MD",
-    body: wm,
-    thumbnail: fs.readFileSync('./thumbnail.jpg'),
-    sourceUrl: sgc
-     }}
-  })
-
+let name = conn.getName(m.sender)
+let fkon = { key: { fromMe: false, participant: `${m.sender.split`@`[0]}@s.whatsapp.net`, ...(m.chat ? { remoteJid: '16504228206@s.whatsapp.net' } : {}) }, message: { contactMessage: { displayName: `${name}`, vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:${name}\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}}
+  let nyaww = 'https://telegra.ph/file/d6f11fbba0e5e93708a97.jpg'
+  let fotodaftar = 'https://telegra.ph/file/431b75e0d7ad9e9f49537.jpg'
 let msg = {
-        private: 'Fitur Ini Hanya Bisa Digunakan Di Private Chat',
-        admin: 'Ini Fitur Khusus Admin',
-        botAdmin: 'Jadikan Yae Sebagai Admin Terlebih Dahulu Agar Bisa Menggunakan Fitur Ini',
+        rowner: 'Ngapain Kak?, Fitur Ini Khusus Developerku',
+        owner: 'Ngapain Kak?, Fitur Ini Khusus Ownerku',
+        mods: 'Fitur Ini Khusus Moderator',
+        premium: 'Fitur Ini Khusus Premium User',
+        group: 'Fitur Ini Hanya Bisa Digunakan Di Grup',       botAdmin: 'Jadikan Lia Sebagai Admin Terlebih Dahulu Agar Bisa Menggunakan Fitur Ini',
         restrict: 'Restict Belum Di Nyalakan Untuk Chat Ini'}[type]
-  /*  if (msg) return conn.sendButtonDoc(m.chat, msg, wm, 'Menu', '.menu', fgclink)*/
-  if (msg) return conn.sendButton(m.chat, `${ucapan()} ` + tag, msg + '\n\n\n\n', [['Maaf', 'huuu']], m, { contextInfo: { externalAdReply: { showAdAttribution: true,
-    description: sgc,
-    title: "Euphyllia - MD",
-    body: wm,
-    thumbnail: fs.readFileSync('./thumbnail.jpg'),
-    sourceUrl: sgc
-     }}
-  })
-  
-  
-    let msgg = {
-    	unreg: 'Hai Kak, Sebelum Menggunakan Fitur Ku, Kakak Harus Daftar Ke Database Terlebih Dahulu'
-}[type]
-if (msgg) return conn.sendButton(m.chat, `${ucapan()} ` + tag, msgg, wm, [['Daftar', '.verify hehe.18']], m, { contextInfo: { externalAdReply: { showAdAttribution: true,
-    description: sgc,
-    title: "Euphyllia - MD",
-    body: wm,
-    thumbnail: fs.readFileSync('./thumbnail.jpg'),
-    sourceUrl: sgc
-     }}
-  })
-}
+  if (msg) return conn.sendMessage(m.chat, { image : { url : nyaww }, caption : msg }, m)
+  let daftar = {
+  unreg: 'Hai Kak, Sebelum Menggunakan Fiturku, Kamu Harus Daftar Ke Database Terlebih Dahulu\nCaranya Ketik .daftar namakamu.umurkamu\nContoh : .daftar lia.18'}[type]
+  if (daftar) return conn.sendMessage(m.chat, { image : { url : fotodaftar }, caption : daftar }, m)
+  }
 function ucapan() {
   const time = moment.tz('Asia/Jakarta').format('HH')
   let res = "Sudah Dini Hari Kok Belum Tidur Kak?"
