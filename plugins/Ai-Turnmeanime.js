@@ -37,7 +37,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 			res = global.API("rose", "/image/drawMe", { url: upld }, "apikey");
 		} else if (command === "turnmeanime") {
 			res = global.API("rose", "/image/differentMe/v3", {
-				apikey: "Frieren",
+				apikey: "Rs-Danil_Elistz",
 				version: 2,
 				isVideo: true,
 				url: upld,
