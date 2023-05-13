@@ -64,7 +64,7 @@ ${readMore}
 ┆❏ MenuXp
 ╰──────────┈༓`
 
-conn.sendButton(m.chat, listnya, wm, lia, [["Owner", `.owner`],["All Menu", `.? all`]], fkontak )
+conn.sendMessage(m.chat, {image: {url: global.lia}, caption: listnya}, m)
   
   let vn = "./loli/inimenu.mp3";
 conn.sendFile(m.chat, vn, "inimenu.mp3", null, m, true, {
