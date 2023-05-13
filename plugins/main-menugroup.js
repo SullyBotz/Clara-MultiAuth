@@ -38,7 +38,7 @@ ${readMore}
 ┆≼≽ mulaivote
 ┆≼≽ vote
 ❏–––––––––––––––༓`
-conn.sendButton(m.chat, tek, wm, thumb, [['Owner',`.owner`],['Sewa',`.sewa`]], fkontak)
+conn.sendMessage(m.chat, {image: {url: global.thumb}, caption: tek}, m)
 }
 handler.command = /^(menugroup)$/i
 
