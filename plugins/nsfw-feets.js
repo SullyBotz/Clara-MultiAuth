@@ -7,7 +7,7 @@ Silakan Aktifkan`
 
    let fimgb = Buffer.from(await anu.arrayBuffer())
 
-    conn.sendButton(m.chat, 'Cih Dasar Sangean', wm, fimgb, [['\nJadi Sange :v', 'huuu']], m)
+            conn.sendMessage(m.chat, { image : { url : fimgb }, caption : 'Cih dasar sangean' }, m)
 }
 handler.help = ['feets']
 handler.tags = ['nsfw','premium']
