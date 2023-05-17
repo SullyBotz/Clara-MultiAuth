@@ -1,5 +1,5 @@
 const linkRegex = /chat.whatsapp.com\/(?:invite\/)?([0-9A-Za-z]{20,24})/i
-const marah = 'https://telegra.ph/file/d6f11fbba0e5e93708a97.jpg'
+const marah = 'https://wallpaperaccess.com/full/2273999.jpg'
 export async function before(m, { isAdmin, isBotAdmin }) {
     if (m.isBaileys && m.fromMe)
         return !0
