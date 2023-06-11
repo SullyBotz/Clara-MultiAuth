@@ -28,51 +28,51 @@ const readMore = more.repeat(4001)
 
 
 global.owner = [
-['6285760451683', true],
-['6281398274790', 'Dims', true],
-['6285760451683', 'Zeltoria', true]
+['6285762717765', true],
+['6285272187892', 'Moona Bot', true],
+['6282268758454', 'FurrrTzy', true]
 ]
 global.mods = []
 global.prems = []
-global.nomorbot = '6283872069306'
-global.nomorown = '6285760451683'
-global.nomorown1 = '6285760451683'
-global.nomorown2 = '6285760451683'
-global.nomorwa = '6285760451683'
+global.nomorbot = '6285762717765'
+global.nomorown = '6282268758454'
+global.nomorown1 = '6285762717765'
+global.nomorown2 = '6285272187892'
+global.nomorwa = '6282268758454'
 
 
 global.readMore = readMore
-global.author = 'Zeltoria'
-global.namebot = '​Euphyllia - MD'
-global.wm = '© Euphyllia By Zeltoria'
+global.author = 'FurrrTzy'
+global.namebot = 'Diggiedawbot - MD'
+global.wm = '© Diggiedaw By FurrrTzy'
 global.media = 'https://telegra.ph/file/02a8d3c4b00146bbfeb5d.jpg'
 global.watermark = wm
-global.wm2 = 'Zeltoria'
+global.wm2 = 'Diggiedaw'
 global.botdate = `Date: ${week} ${date}\nTime: ${wktuwib}`
 global.bottime = `Time: ${wktuwib}`
 global.titlebot = `Euphyllia - MD`
-global.stickpack = 'Euphyllia By'
-global.stickauth = `© Zeltoria`
+global.stickpack = 'Diggiedawbot By'
+global.stickauth = `© FurrrTzy`
 global.week = `${week} ${date}`
 global.wibb = `${wktuwib}`
-global.nameown1= 'Zeltoria'
-global.nameown2 = 'Zeltoria'
+global.nameown1= 'FurrTzy'
+global.nameown2 = 'FurqonKurnia'
 global.Linkgc = 'Bentar'
 global.lynk = '-'
 //Link Social Media Ganti Aja Kalau Ga Punya Biarin Aja
-global.sig = 'https://www.instagram.com/danilelistz02' //instagram
+global.sig = 'https://www.instagram.com/furqon_kurnia' //instagram
 global.sgh = 'https://github.com/Zeltoria' //github
 global.sgc = 'https://chat.whatsapp.com/Csjk910wJyt0ZTQGidpVUS' //group whatsapp
 global.sdc = '-' //discord
 global.snh = 'https://www.youtube.com/@zeltoria' //youtube
 //Donasi/Payment
-global.pdana = '-' // dana
-global.povo = '0896-1075-0607'
-global.pgopay = '-' // gopay
+global.pdana = '0857-6271-7765' // dana
+global.povo = '-'
+global.pgopay = '0821-6932-5368' // gopay
 global.plinkaja = '-' //link aja
-global.ppulsa = '-' // pulsa
-global.ppulsa2 = '-' //pulsa 2
-global.psaweria = 'https://saweria.co/' // saweria
+global.ppulsa = '0822-6875-8454' // pulsa
+global.ppulsa2 = '0857-6271-7765' //pulsa 2
+global.psaweria = 'https://saweria.co/MangsutBotz' // saweria
 //mending biarin aja
 global.ListHargaSewa = '├ 5 Hari IDR 3.000\n├ 7 Hari IDR 5.000\n├ 15+5 Hari IDR 10.000\n├ 30 Hari IDR 15.000'
 //⫹⫺ ╳╶╼╶╶╶╶┈ ⎝ TAMPILAN ⎞ ┈╴╴╴╴╾╴╳ ⫹⫺
